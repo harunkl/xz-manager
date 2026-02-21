@@ -7,6 +7,8 @@ XZ-Manager adalah manager berbasis menu (CLI) untuk mengelola:
 
 > **Wajib dijalankan di VPS sebagai root.**
 
+> **Mode Domain, WAJIB pointing IP VPS ke domain dahulu.**
+
 ---
 
 ## 1) Wajib Root
@@ -45,7 +47,7 @@ bash install.sh
 
 Untuk masuk menu manager:
 ```bash
-xzmenu
+xz
 ```
 
 ---
@@ -74,16 +76,4 @@ journalctl -u xzbot -n 50 --no-pager
 - Jika bot belum jalan, biasanya karena **BOT_TOKEN** masih kosong (set dulu dari menu Utility).
 
 
-## Struktur Repo
-Semua file berada di **root repo** (tanpa folder `bin/`).
 
-File yang wajib ada:
-- install.sh
-- menu.sh
-- vmess.sh
-- vless.sh
-- trojan.sh
-- zivpn.sh
-- utility.sh
-- udpgw.sh
-- xzbot.py
